@@ -1,0 +1,93 @@
+    html {
+        box-sizing: border-box;
+    }
+    
+    *,
+    *:after,
+    *:before {
+        box-sizing: inherit;
+    }
+    
+    body {
+        background-color: black;
+        color: honeydew;
+    }
+    
+    .loyaut {
+        background-image: url('party.jpg');
+        display: grid;
+        grid-template-areas: 'head head' 'conten news' 'footer footer';
+        grid-template-rows: 500px 1fr 20px;
+        grid-template-columns: 1fr 1fr 20px;
+    }
+    
+    .head {
+        grid-area: head;
+    }
+    
+    .head_contact {
+        border-bottom: ridge 1px;
+        border-color: rgb(155, 93, 13);
+        width: 100vw;
+        height: 100px;
+        display: inline-block;
+    }
+    
+    .head_contact--tel {
+        width: 1030px;
+        margin-top: 16px;
+        margin-left: 30px;
+        text-align: justify;
+        display: inline-block;
+        font-family: 'Teko', sans-serif;
+        font-size: 40px;
+    }
+    
+    .head_contact--web {
+        width: 200px;
+        margin-top: 15px;
+        display: inline-block;
+    }
+    
+    .head_contact--web a {
+        margin-left: 130px;
+    }
+    
+    .sunrise {
+        margin-top: 160px;
+        text-align: center;
+        font-family: 'Monoton', cursive;
+        font-size: 90px;
+        color: rgba(223, 211, 41, 0.979)
+    }
+    
+    .conten-head {
+        font-family: 'Marck Script', cursive;
+        font-size: 25px;
+    }
+    
+    .conten {
+        border-top: ridge 1px;
+        border-color: rgb(255, 255, 255);
+        grid-area: conten;
+        font-family: 'Big Shoulders Inline Display', cursive;
+        text-align: center;
+        font-size: 25px;
+    }
+    
+    .news {
+        border-top: ridge 1px;
+        border-left: ridge 1px;
+        border-color: rgb(255, 255, 255);
+        grid-area: news;
+    }
+    
+    .img {
+        background-image: url(drnk.jpg);
+        background-position: center;
+    }
+    
+    .footer {
+        border-top: ridge 1px;
+        grid-area: footer;
+    }
